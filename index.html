@@ -1,93 +1,88 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>ภัทรกร สดใส | Software Developer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#f4f6f8;--ink:#14213d;--muted:#5a6678;--line:#d5dce5;--panel:#14213d;--code:#dfe8f5;--key:#7fd6c4;--str:#f2c879;--accent:#0b7a6b;
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1621;--ink:#e6edf3;--muted:#98a6b8;--line:#243244;--panel:#162231;--accent:#5ec8b6}}
-:root[data-theme="dark"]{--bg:#0e1621;--ink:#e6edf3;--muted:#98a6b8;--line:#243244;--panel:#162231;--accent:#5ec8b6}
-html{scroll-padding-top:env(safe-area-inset-top,0px)}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.7 "Noto Sans Thai",system-ui,sans-serif}
-main{max-width:860px;margin:0 auto;padding:56px 24px 80px}
-h1{font-size:clamp(2.4rem,8vw,4.2rem);line-height:1.1;margin:0;font-weight:700;letter-spacing:-.01em}
-.en{display:block;font-size:.42em;font-weight:500;color:var(--muted);margin-top:10px;letter-spacing:0}
-.role{margin:20px 0 0;font-size:1.2rem;font-weight:500;color:var(--accent)}
-.links{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 0;padding:0;list-style:none}
-.links a{display:inline-block;padding:8px 16px;border:1.5px solid var(--ink);border-radius:999px;color:var(--ink);text-decoration:none;font-weight:500;font-size:.95rem}
-.links a:hover,.links a:focus-visible{background:var(--ink);color:var(--bg);outline:none}
-pre{margin:48px 0 0;padding:24px;background:var(--panel);color:var(--code);border-radius:10px;overflow-x:auto;font:400 14.5px/1.75 "JetBrains Mono",ui-monospace,monospace}
-pre .k{color:var(--key)}pre .s{color:var(--str)}
-section{margin-top:64px;padding-top:28px;border-top:1px solid var(--line)}
-h2{margin:0 0 16px;font-size:1.5rem}
-p{margin:0 0 12px;max-width:62ch}
-.item h3{margin:0;font-size:1.1rem}
-.item .meta{color:var(--muted);font-size:.95rem;margin:2px 0 0}
-.empty{padding:20px;border:1.5px dashed var(--line);border-radius:10px;color:var(--muted)}
-.empty a{color:var(--accent);font-weight:500}
-a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-footer{margin-top:72px;color:var(--muted);font-size:.9rem}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | ภัทรกร สดใส</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>body{font-family:'Prompt',sans-serif}</style>
 </head>
-<body>
-<main>
-<header>
-  <h1>ภัทรกร สดใส<span class="en">Phattarakorn Sodsai</span></h1>
-  <p class="role">Software Developer</p>
-  <ul class="links">
-    <li><a href="mailto:phattarakorn.sod@spumail.net">อีเมล</a></li>
-    <li><a href="https://www.linkedin.com/in/phattarakorn-sodsai-41b3ab440" target="_blank" rel="noopener">LinkedIn</a></li>
-    <li><a href="https://github.com/jiminjeongdes" target="_blank" rel="noopener">GitHub</a></li>
-  </ul>
-  <pre aria-label="สรุปข้อมูลของภัทรกร"><span class="k">const</span> phattarakorn = {
-  <span class="k">role</span>:      <span class="s">"Software Developer"</span>,
-  <span class="k">studying</span>:  <span class="s">"Information Technology, SPU"</span>,
-  <span class="k">interests</span>: [<span class="s">"Software development"</span>,
-                <span class="s">"Coding"</span>,
-                <span class="s">"Data management"</span>],
-  <span class="k">strength</span>:  <span class="s">"Learns IT topics quickly"</span>,
-  <span class="k">location</span>:  <span class="s">"Bangkok, Thailand"</span>
-};</pre>
-</header>
+<body class="bg-slate-950 text-slate-200 min-h-screen flex flex-col">
 
-<section id="about">
-  <h2>เกี่ยวกับฉัน</h2>
-  <p>นักศึกษาสาขา Information Technology มหาวิทยาลัยศรีปทุม สนใจด้าน Software Development การเขียนโค้ด และการจัดการข้อมูล เรียนรู้เร็วในเรื่องที่เกี่ยวกับ IT และพร้อมพัฒนาทักษะอย่างต่อเนื่อง</p>
-</section>
+  <!-- Header -->
+  <header class="bg-gradient-to-b from-indigo-950 via-slate-900 to-slate-950 py-16 px-6">
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8">
+      <img src="myself.jpg" alt="ภัทรกร สดใส"
+           class="w-44 h-44 md:w-52 md:h-52 rounded-full object-cover object-bottom border-4 border-indigo-500 shadow-lg shadow-indigo-500/30">
+      <div class="text-center md:text-left">
+        <p class="text-indigo-400 tracking-widest text-sm uppercase">Portfolio</p>
+        <h1 class="text-3xl md:text-4xl font-bold text-white mt-1">นาย ภัทรกร สดใส</h1>
+        <ul class="mt-4 space-y-1 text-slate-300">
+          <li>วันเกิด: 13 กันยายน ค.ศ. 2003</li>
+          <li>อายุ: 23 ปี</li>
+        </ul>
+        <p class="mt-4 text-slate-300 leading-relaxed">
+          สามารถทำ Backend, Data Analyst และ Machine Learning ได้
+          และเชี่ยวชาญในการใช้ <span class="text-indigo-400 font-semibold">Python</span> และ
+          <span class="text-indigo-400 font-semibold">SQL</span>
+        </p>
+        <div class="mt-5 flex flex-wrap gap-2 justify-center md:justify-start">
+          <span class="px-3 py-1 rounded-full bg-indigo-600/20 border border-indigo-500/40 text-sm">Backend</span>
+          <span class="px-3 py-1 rounded-full bg-indigo-600/20 border border-indigo-500/40 text-sm">Data Analyst</span>
+          <span class="px-3 py-1 rounded-full bg-indigo-600/20 border border-indigo-500/40 text-sm">Machine Learning</span>
+          <span class="px-3 py-1 rounded-full bg-indigo-600/20 border border-indigo-500/40 text-sm">Python</span>
+          <span class="px-3 py-1 rounded-full bg-indigo-600/20 border border-indigo-500/40 text-sm">SQL</span>
+        </div>
+      </div>
+    </div>
+  </header>
 
-<section id="education">
-  <h2>การศึกษา</h2>
-  <div class="item">
-    <h3>Bachelor's Degree, Information Technology</h3>
-    <p class="meta">มหาวิทยาลัยศรีปทุม (SPU Sripatum)</p>
-  </div>
-</section>
+  <!-- Portfolio -->
+  <main class="flex-1 py-14 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold text-white text-center">ความสามารถของฉัน</h2>
+      <div class="w-16 h-1 bg-indigo-500 mx-auto mt-3 mb-10 rounded"></div>
 
-<section id="certificates">
-  <h2>ใบรับรอง</h2>
-  <div class="item">
-    <h3>AI Literacy and Safety Modules</h3>
-    <p class="meta">ความรู้รอบด้าน AI และความปลอดภัย</p>
-  </div>
-</section>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <article class="bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-indigo-500 hover:-translate-y-1 transition">
+          <img src="pic/AI.jpg" alt="AI & Machine Learning" class="w-full h-80 object-cover">
+          <div class="p-5">
+            <h3 class="text-lg font-semibold text-white">AI &amp; Machine Learning</h3>
+            <p class="text-sm text-slate-400 mt-2">พัฒนาโมเดล Machine Learning เพื่อการวิเคราะห์เชิงพยากรณ์</p>
+          </div>
+        </article>
 
-<section id="projects">
-  <h2>โปรเจกต์</h2>
-  <div class="empty">กำลังรวบรวมผลงาน ดูโค้ดล่าสุดได้ที่ <a href="https://github.com/jiminjeongdes" target="_blank" rel="noopener">GitHub</a></div>
-</section>
+        <article class="bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-indigo-500 hover:-translate-y-1 transition">
+          <img src="pic/SQL.jpg" alt="SQL for Data Analysts" class="w-full h-80 object-cover">
+          <div class="p-5">
+            <h3 class="text-lg font-semibold text-white">SQL &amp; Data Analyst</h3>
+            <p class="text-sm text-slate-400 mt-2">เชี่ยวชาญ SQL สำหรับการจัดการและวิเคราะห์ข้อมูล</p>
+          </div>
+        </article>
 
-<section id="contact">
-  <h2>ติดต่อ</h2>
-  <p>อีเมล: <a href="mailto:phattarakorn.sod@spumail.net" style="color:var(--accent)">phattarakorn.sod@spumail.net</a></p>
-</section>
+        <article class="bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-indigo-500 hover:-translate-y-1 transition">
+          <img src="pic/pr.jpg" alt="Programming" class="w-full h-80 object-cover">
+          <div class="p-5">
+            <h3 class="text-lg font-semibold text-white">Programming &amp; Backend</h3>
+            <p class="text-sm text-slate-400 mt-2">เขียนโปรแกรมด้วย Python และพัฒนาระบบ Backend</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
 
-<footer>ภัทรกร สดใส · กรุงเทพมหานคร</footer>
-</main>
+  <!-- Footer -->
+  <footer class="bg-slate-900 border-t border-slate-800 py-8 px-6 text-center">
+    <p class="text-slate-400 mb-3">ติดต่อ / ติดตามผลงาน</p>
+    <div class="flex flex-col sm:flex-row gap-3 sm:gap-8 justify-center">
+      <a href="https://github.com/jiminjeongdes/jiminjeongdes.github.io" target="_blank" rel="noopener"
+         class="text-indigo-400 hover:text-indigo-300 underline">jiminjeongdes.github.io</a>
+      <a href="https://www.linkedin.com/in/phattarakorn-sodsai-41b3ab440" target="_blank" rel="noopener"
+         class="text-indigo-400 hover:text-indigo-300 underline">www.linkedin.com/in/phattarakorn-sodsai-41b3ab440</a>
+    </div>
+    <p class="text-xs text-slate-600 mt-5">&copy; 2026 ภัทรกร สดใส</p>
+  </footer>
+
 </body>
 </html>
